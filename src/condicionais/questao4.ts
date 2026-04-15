@@ -9,8 +9,11 @@ let numero2: number = Number(prompt("Digite outro número: "))
 if(numero1 == numero2){
     console.log("Números iguais")
 }
-else if(numero1 > numero2 || numero2 > numero1){
+else if(numero1 > numero2){
     console.log("Primeiro é maior")
+}
+else{
+    console.log("Segundo maior")
 }
 
 else()
