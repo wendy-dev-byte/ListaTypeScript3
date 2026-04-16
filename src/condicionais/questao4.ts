@@ -16,9 +16,9 @@ else{
     console.log("Segundo maior")
 }
 
-else()
 
-"oi"
+
+
 
 
 
