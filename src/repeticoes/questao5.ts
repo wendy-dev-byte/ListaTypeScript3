@@ -12,15 +12,39 @@
 //  Quem foi o vendedor com a maior venda (maior valor digitado).
 //  Quantos vendedores atingiram a categoria &quot;Ouro&quot;.
 
+let valor:number
 function classificarVenda(valor: number){
     if(valor < 1000){
         return "Bronze"
     }
-    else if(valor >= 1000 || valor < 5000){
+    else if(valor >= 1000 && valor < 5000){
         return "Prata"
     }
     else{
         return "Ouro"
     }
 }
-for(let i = 0,)
+
+let acumulador: number = 0; let maior: number = 0; let maiorOuro = 0;let vendedorMaior:number = 0
+for(let i = 0; i < 6; i++){
+   valor = Number(prompt("Qual foi o valor de vendas dos 5 vendedores"+ (i + 1) + "?"))
+   
+ let classificacao = classificarVenda(valor)
+    
+
+    acumulador = valor + acumulador
+    if(maior < valor){
+        maior = valor
+        vendedorMaior = i + 1
+    }
+    if(classificacao === "Ouro"){
+        maiorOuro++
+    }
+}
+console.log("Total de vendas da equipe: " + acumulador);
+console.log("Maior venda: " + maior + " (Vendedor " + vendedorMaior + ")");
+console.log("Quantidade de vendedores Ouro: " + maiorOuro);
+    
+
+
+ 
