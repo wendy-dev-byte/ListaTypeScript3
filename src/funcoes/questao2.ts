@@ -13,6 +13,10 @@
 // o Se status_alerta for True, imprime &quot;ALERTA: Temperatura fora da faixa ideal!&quot;.
 // o Se status_alerta for False, imprime &quot;Temperatura dentro da faixa normal.&quot;.
 
+
+
+
+
 function ler_temperatura(){
     let temperatura: number = Number(prompt("Qual a temperatura do ambiente?"))
     return temperatura
@@ -33,7 +37,6 @@ function emitir_alerta(status_alerta: boolean){
     else{
         console.log('Temperatura dentro da faixa normal')
     }
-
 }
 ler_temperatura()
 let ver = verificar_alerta_temperatura(ler_temperatura())
