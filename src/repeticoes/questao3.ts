@@ -10,9 +10,9 @@
 
 let conttF = 0; let conttM = 0; let acumSalario = 0; let maiorSalari = 0; let nomedomaiorsalario = ""; let contgeral = 0; let salarioTotal= 0
 
-let op: number = 0
+let op1: number = 0
 
-while(op != -1){
+while(op1 != -1){
     
     let nome = String(prompt("Qual seu nome? "))
     let horas = Number(prompt("Por quantas horas você trabalhar? "))
@@ -35,7 +35,7 @@ while(op != -1){
         nomedomaiorsalario = nome
     }
 
-    op = Number(prompt("Gostaria de continuar? (-1 = parar e -2 continuar)"))
+    op1 = Number(prompt("Gostaria de continuar? (-1 = parar e -2 continuar)"))
 }
 
 let percentualM = (conttM/contgeral)*100
