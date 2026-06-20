@@ -8,10 +8,10 @@
 class Pessoa{
     nome: string
     idade: number
-    peso: string
+    peso: number
     altura: number
 
-constructor(n: string, i: number, p: string, a:number){
+constructor(n: string, i: number, p: number, a:number){
     this.nome = n
     this.idade = i
     this.peso = p
@@ -23,4 +23,25 @@ envelhecer(): void{
         this.altura = this.altura + 0.5
     }
 }
+engorda(): void{
+    this.peso = this.peso + 5
+
 }
+emagrecer(): void{
+    this.peso = this.peso - 5
+}
+mostrar(): void {
+    console.log(`Nome: ${this.nome}`)
+    console.log(`Idade: ${this.idade}`)
+    console.log(`Peso: ${this.peso}`)
+    console.log(`Altura: ${this.altura}`)
+}
+
+}
+
+let nome:string = String(prompt("Qual seu nome?"))
+let idade:number = Number(prompt("Qual sua idade?"))
+let peso:number = Number(prompt("Qual seu peso? "))
+let altura:number = Number(prompt("Qual sua altura?"))
+
+const p1 = new Pessoa(nome,idade, peso, altura)
