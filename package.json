@@ -1,24 +1,14 @@
+
 {
-  "name": "listatypescript3",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wendy-dev-byte/ListaTypeScript3.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/wendy-dev-byte/ListaTypeScript3/issues"
-  },
-  "homepage": "https://github.com/wendy-dev-byte/ListaTypeScript3#readme",
-  "devDependencies": {
-    "typescript": "^6.0.2"
-  }
+"name": "teste-type",
+"version": "1.0.0",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "tsc && node ./dist/index.js"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"type ": "module"
 }

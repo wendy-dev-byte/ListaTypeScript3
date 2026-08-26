@@ -35,7 +35,7 @@ calcularPerimetro(){
 let altura:number = Number(prompt("Qual a altura? "))
 let base:number = Number(prompt("Qual valor da base?"))
 
-const q1 = new Retangulo(altura, base)
+// const q1 = new Retangulo(altura, base)
 
-console.log("Area" + q1.calcularArea())
-console.log(`Perimetro ${q1.calcularPerimetro()}`)
+// console.log("Area" + q1.calcularArea())
+// console.log(`Perimetro ${q1.calcularPerimetro()}`)
