@@ -1,7 +1,7 @@
 // 1. Crie um programa que peça números até o usuário digitar 0 e mostre:
 //  Quantidade de números digitados
 //  Soma total
-export function repeticao1() {
+export function questao1() {
     let op = -1;
     let cont = 0;
     let acum = 0;

@@ -2,7 +2,7 @@
 //  Quantidade de números digitados
 //  Soma total
 
-export function repeticao1 (): void{
+export function questao1 (): void{
 let op =  -1; let cont = 0; let acum = 0
     while(op != 0){
         op = Number(prompt('Digite números'))

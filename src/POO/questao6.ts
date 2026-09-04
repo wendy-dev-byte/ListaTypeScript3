@@ -16,7 +16,7 @@ class contaCorrenta {
     }
 
     public alterarnome(): void{
-    this.nomeCorrentista = nomeNovo
+    //this.nomeCorrentista = nomeNovo
 }
 
     public deposito(valor:number): Number{
@@ -33,6 +33,15 @@ class contaCorrenta {
             this.saldo = this.saldo + valor
             console.log
         }
+        return 0
 
     }
 }
+
+// class contaCorrente {
+//     numeroDaConta: number
+//     nomeCorrentista: string
+//     saldo: number
+
+//     constructor{numeroDaConta: number, nomeCorrentista: string, saldo: number}
+// 
