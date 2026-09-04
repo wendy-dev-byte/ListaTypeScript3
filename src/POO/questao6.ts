@@ -16,7 +16,7 @@ class contaCorrenta {
     }
 
     public alterarnome(): void{
-    //this.nomeCorrentista = nomeNovo
+    this.nomeCorrentista = nomeNovo
 }   
 
     public deposito(valor:number): Number{
@@ -30,10 +30,10 @@ class contaCorrenta {
             console.log("O valor do saldo é maior do que o saldo disponível")
         }
         else{
-            this.saldo = this.saldo + valor
-            console.log
+            let saldo1 = this.saldo + valor
+            return saldo1
         }
-        return 10
+        
 
     }
 }
