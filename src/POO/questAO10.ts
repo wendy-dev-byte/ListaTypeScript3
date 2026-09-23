@@ -1,4 +1,6 @@
 // questao 10
+
+export function questao10():void{
 class BichinhoVirtual{
     nome:string
     fome:string
@@ -95,4 +97,4 @@ while(op != "N"){
 console.log("DADOS FINAIS DO BIXINHO")
 bichinhoVirtual.exibir()
 
-  
+}
