@@ -4,7 +4,7 @@
 // atributos são obrigatórios. Por fim, faça com que esse sistema interaja com o usuário permitido que
 // ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.
 
-
+export function questao6():void{
 class contaCorrenta {
     public numeroConta: number
     public nomeCorrentista: string
@@ -15,7 +15,7 @@ class contaCorrenta {
         this.nomeCorrentista = nomeCorrentista
     }
 
-    public alterarnome(): void{
+    public alterarnome(nomeNovo:string): void{
     this.nomeCorrentista = nomeNovo
 }   
 
@@ -26,22 +26,14 @@ class contaCorrenta {
     }
 
     public saque(valor:number): Number{
+        let saldo1 = 0
         if(valor > this.saldo){
             console.log("O valor do saldo é maior do que o saldo disponível")
         }
         else{
-            let saldo1 = this.saldo + valor
-            return saldo1
+            saldo1 = this.saldo + valor
         }
-        
-
+        return saldo1
     }
 }
-
-// class contaCorrente {
-//     numeroDaConta: number
-//     nomeCorrentista: string
-//     saldo: number
-
-//     constructor{numeroDaConta: number, nomeCorrentista: string, saldo: number}
-// 
+}
