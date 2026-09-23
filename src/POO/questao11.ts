@@ -1,7 +1,7 @@
 // 11. Uma lanchonete quer registrar pedidos dos clientes. O sistema deve solicitar o nome do cliente, o
 // nome do pedido e o valor. Crie um método que exiba o resumo do pedido e o valor total.
 
-
+export function questao11():void{
 class Pedidos{
     nome: string
     nomePedido: string
@@ -31,13 +31,7 @@ op = Number (prompt("Deseja continnuar? "))
 
 
 }
-
-
-
-
 let valorT = 0
-
-
 for(let pedidos of listaP){
      valorT = pedidos.valor + valorT
 }
@@ -45,4 +39,4 @@ for(let pedidos of listaP){
     pedidos.exibir
 }
 console.log("Valor total: " + valorT)
-
+}
