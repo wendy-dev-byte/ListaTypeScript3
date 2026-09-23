@@ -10,7 +10,7 @@
 
 
 
-
+export function questao17():void{
 
 
 
@@ -116,7 +116,7 @@ console.log(" A quantidade de Alunos " +totalA )
 console.log(" A quantidade de sERVIDORES " + totalS)
 
 
-
+}
 
 
 
