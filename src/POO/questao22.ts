@@ -1,3 +1,4 @@
+
 // 22. Abstração Herança Polimorfismo Repetição Encapsulamento Arrays
 // Oficina Mecânica e Revisão de Frotas
 // O setor de transportes públicos precisa mapear a manutenção de seus veículos. Crie uma classe base
@@ -7,6 +8,9 @@
 // que o mecânico informe a quilometragem atual de um determinado veículo e, varrendo o array de
 // objetos, o sistema responde textualmente se aquele veículo específico precisa ou não ser retido para
 // manutenção imediata.
+
+export function questao22():void{
+
 
 abstract class Veiculo {
     private placa: string
@@ -114,4 +118,5 @@ while (op != "4") {
   }
     }
     }
+}
 }
