@@ -4,7 +4,7 @@
 // Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo a idade dela menor que 21 anos,
 // ela deve crescer 0,5 cm.
 
-
+export function questao5():void{
 class Pessoa{
     nome: string
     idade: number
@@ -45,3 +45,4 @@ let peso:number = Number(prompt("Qual seu peso? "))
 let altura:number = Number(prompt("Qual sua altura?"))
 
 const p1 = new Pessoa(nome,idade, peso, altura)
+}
