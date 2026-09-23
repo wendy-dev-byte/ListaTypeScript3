@@ -4,6 +4,7 @@
 
 
 
+export function questao13():void{
 
 class Cadastrar {
     nomeAluno:string
@@ -41,3 +42,4 @@ let result:string = cadastrar.calculoMedia(nota1,nota2)
 console.log("Nome: " + nomeAluno)
 console.log("Aluno: " + result)
 
+}
