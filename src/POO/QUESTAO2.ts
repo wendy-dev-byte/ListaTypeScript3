@@ -2,7 +2,7 @@
 //  Atributos: Tamanho do lado
 //  Métodos: Mudar valor do Lado,
 //  Retornar valor do Lado e calcular Área;
-
+export function questao2():void{
 class Quadrado{
     lado:number
 
@@ -16,11 +16,11 @@ mudarLado(novolado:number){
 }
 calcularArea(){
    return this.lado*this.lado
-
-
 }
-}
+ }
 const q1 = new Quadrado(5)
 
 console.log(q1.mudarLado(10))
 console.log(q1.calcularArea())
+
+}
