@@ -7,6 +7,7 @@
 // teclado e calcular o salário de cada um.
 
 
+export function questao15():void{
 
 
 abstract  class Funcionario{
@@ -77,3 +78,4 @@ console.log("Salário:", funcionario2.calcularS())
 
 
 
+}
