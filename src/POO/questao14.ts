@@ -3,6 +3,7 @@
 // // publicação e disponibilidade (boolean). O programa deve permitir cadastrar até 15 livros via teclado,
 // listar todos os disponíveis e registrar o empréstimo de um livro pesquisado pelo título.
 
+export function questao14():void{
 
 class Biblioteca{
     tit:string
@@ -48,3 +49,4 @@ for(let i=0; lista.length; i++){
     console.log(lista[i])
 }
 
+}
