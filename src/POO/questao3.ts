@@ -6,6 +6,7 @@
 //  Calcular Área,
 //  Calcular Perímetro.
 
+export function questao3():void{
 class Retangulo{
     altura: number
     base: number
@@ -33,3 +34,4 @@ calcularPerimetro(){
 
 }
 const p1 = new Retangulo(5, 6)
+}
