@@ -8,6 +8,10 @@
 // de pedidos, calcula os valores finais de cada um (aplicando as taxas quando necessário) e exibe o
 // faturamento total do estabelecimento.
 
+export function questao20():void{
+
+
+
 abstract class Pizzaria {
     numeroMesa: number
     valorIngredientes: number
@@ -88,3 +92,4 @@ while(op != "3"){
     }
 }
 console.log("Programa encerrado")
+}
