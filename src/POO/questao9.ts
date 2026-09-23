@@ -3,7 +3,7 @@
 // um método que calcule o valor total em estoque (preço × quantidade) e exiba essa informação para
 // cada produto.
 
-
+export function questao9():void{
 class Controle{
     produto:string
     preco:number
@@ -36,4 +36,4 @@ for(let controle1 of listaC){
     console.log("Quantidade: " + controle1.quantidade)
     console.log("Valor no estoque" + controle1.calcularValor())
 }
-
+}
