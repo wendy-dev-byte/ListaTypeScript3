@@ -2,10 +2,7 @@
 // local. Depois, deve criar um objeto com as medidas e calcular a quantidade de pisos e de rodapés
 // necessárias para o local.
 
-
-
-
-
+export function questao4():void{
 class Retangulo{
     altura: number
     base: number
@@ -34,8 +31,4 @@ calcularPerimetro(){
 
 let altura:number = Number(prompt("Qual a altura? "))
 let base:number = Number(prompt("Qual valor da base?"))
-
-// const q1 = new Retangulo(altura, base)
-
-// console.log("Area" + q1.calcularArea())
-// console.log(`Perimetro ${q1.calcularPerimetro()}`)
+}
