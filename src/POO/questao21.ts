@@ -1,23 +1,30 @@
-// //QUESTÃO 21
-// // 21.	O projeto socioambiental "Flor&Ser" abriu inscrições para propostas de reflorestamento no 
-// // campus do IFS Tobias Barreto. Crie a superclasse Projeto com os atributos privados titulo, 
-// // coordenador e nota. O setter setNota(valor) deve validar estritamente o intervalo de 0 a 10, 
-// // lançando exceção ou mensagem de erro para valores inválidos. As subclasses ProjetoVerde (plantio urbano)
-// //  e ProjetoCultural (conscientização) sobrescrevem o método descricaoCategoria() com textos distintos. 
-// // O usuário preenche os projetos pelo terminal. 
-// // O programa calcula a média das notas e, ao final, 
-// // exibe os projetos com nota acima da média, mostrando a categoria de cada um via polimorfismo.
-// // Requisitos mínimos:
-// // • nota privada com validação estrita no setter (0 ≤ nota ≤ 10).
-// // • descricaoCategoria() abstrato/sobrescrito em ProjetoVerde e ProjetoCultural.
-// // • Cálculo de média com laço sobre os projetos cadastrados.
-// // • Filtro e exibição dos projetos acima da média.
-// // • Chamada polimórfica a descricaoCategoria() na exibição final.
+
+
+// 21.	O projeto socioambiental "Flor&Ser" abriu inscrições para propostas de reflorestamento no 
+// campus do IFS Tobias Barreto. Crie a superclasse Projeto com os atributos privados titulo, 
+// coordenador e nota. O setter setNota(valor) deve validar estritamente o intervalo de 0 a 10, 
+// lançando exceção ou mensagem de erro para valores inválidos. As subclasses ProjetoVerde (plantio urbano)
+//  e ProjetoCultural (conscientização) sobrescrevem o método descricaoCategoria() com textos distintos. 
+// O usuário preenche os projetos pelo terminal. 
+// O programa calcula a média das notas e, ao final, 
+// exibe os projetos com nota acima da média, mostrando a categoria de cada um via polimorfismo.
+// Requisitos mínimos:
+// • nota privada com validação estrita no setter (0 ≤ nota ≤ 10).
+// • descricaoCategoria() abstrato/sobrescrito em ProjetoVerde e ProjetoCultural.
+// • Cálculo de média com laço sobre os projetos cadastrados.
+// • Filtro e exibição dos projetos acima da média.
+// • Chamada polimórfica a descricaoCategoria() na exibição final.
 
 export function questao21():void{
 
 abstract class Projeto {
-    private _titulo:string = ""
+    private _titulo: string = ""
+    public get titulo1(): string {
+        return this._titulo
+    }
+    public set titulo1(value: string) {
+        this._titulo = value
+    }
     private _coordenador:string = ""
     private _nota:number
 
@@ -80,7 +87,7 @@ class ProjetoCultural extends Projeto{
     }
 }
 
-let op = -1
+let op:number = -1
 
 while(op!= 0 ){
 op = Number(prompt(`Escolha as opções desejadas: 
