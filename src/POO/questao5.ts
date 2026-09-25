@@ -44,5 +44,6 @@ let idade:number = Number(prompt("Qual sua idade?"))
 let peso:number = Number(prompt("Qual seu peso? "))
 let altura:number = Number(prompt("Qual sua altura?"))
 
-const p1 = new Pessoa(nome,idade, peso, altura)
+let p1 = new Pessoa(nome,idade, peso, altura)
+p1.mostrar()
 }
