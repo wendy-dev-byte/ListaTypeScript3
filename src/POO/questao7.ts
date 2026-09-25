@@ -45,5 +45,5 @@ let percentualN: number = Number(prompt("Qual foi seu percentual de aumento?"))
 let funcionario:Cadastro = new Cadastro(nome,cargo,salario) // objeto funcionário criado, mas os valores estão zarados
 
 
-funcionario.exibirInformacao
+funcionario.exibirInformacao()
 }
