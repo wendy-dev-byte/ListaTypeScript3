@@ -31,4 +31,6 @@ calcularPerimetro(){
 
 let altura:number = Number(prompt("Qual a altura? "))
 let base:number = Number(prompt("Qual valor da base?"))
+let retangulo = new Retangulo(altura,base)
+retangulo.retornaValor()
 }
