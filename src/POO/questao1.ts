@@ -1,18 +1,46 @@
-// // 1. Classe Bola: Crie uma classe que modele uma bola:
-// //  Atributos: Cor, circunferência, material
-// //  Métodos: trocaCor e mostraCor
-// class Bola {
-//     constructor(cor, circunferencia, material) {
-//         this.cor = cor;
-//         this.circunferencia = circunferencia;
-//         this.material = material;
-//     }
-//     trocaCor(novaCor) {
-//         this.cor = novaCor;
-//     }
-//     mostrarCor() {
-//         console.log("a Nova cor é: " + this.cor);
-//     }
-// }
+// 1. Classe Bola: Crie uma classe que modele uma bola:
+//  Atributos: Cor, circunferência, material
+//  Métodos: trocaCor e mostraCor
+
+class Bola {
+        cor: string = "azul"
+        circunferencia: number
+        material: string
+
+
+        constructor(cor: string, circunferencia: number, material: string) {
+            this.cor = cor
+            this.circunferencia = circunferencia
+            this.material = material
+
+
+        }
+        exibirbola(): void {
+            console.log(`cor: ${this.cor} | circunferencia: ${this.circunferencia} | material: ${this.material}`)
+        }
+
+
+        trocarcor(novacor: string): void {
+            novacor = "vermelho"
+            this.trocarcor
+        }
+
+
+        mostrarcor(): void {
+            this.trocarcor
+        }
+    }
+    let  novaBola: Bola = new  Bola("verde", 1.50, "aço")
+         novaBola.exibirbola()                           
+
+
+
+
+
+
+
+
+
+
 
 
