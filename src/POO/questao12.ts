@@ -25,13 +25,14 @@ class Controle {
         console.log("Modelo do carro: " + this.modeloCarro)
         console.log("Valor da diária: R$ " + this.valorDiaria)
         console.log("Quantidade de dias: " + this.quantidadeDias)
-        console.log("Valor total: R$ " + this.calcularValor())
+        let valorTotal = this.calcularValor()
+        console.log("Valor total: R$ " + valorTotal)
     }
 }
 
 let op: string = ""
 
-while (op != "NÃO") {
+while (op != "N") {
     let modeloDoCarro: string = String(prompt("Qual modelo do carro? "))
     let valorDiaria: number = Number(prompt("Qual foi o valor da diária? "))
     let quantidadeDeDias: number = Number(prompt("Quantos dias ficou alugado? "))
@@ -40,6 +41,6 @@ while (op != "NÃO") {
 
     controle.exibirResumo()
 
-    op = String(prompt("Deseja fazer uma nova locação? Sim/Não")).toUpperCase()
+    op = String(prompt("Deseja fazer uma nova locação? S-Sim ou N-Não")).toUpperCase()
 }
 }
