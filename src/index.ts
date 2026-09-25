@@ -10,7 +10,7 @@ document.getElementById("btn4")?.addEventListener("click",poo4)
 import { questao5 as poo5} from "./POO/questao5.js";
 document.getElementById("btn5")?.addEventListener("click",poo5)
 
-import { questao6 as poo6} from "./POO/questao6.js";
+import { questao6 as poo6} from "./POO/questao6.js"; // AQUI ESTÁ FUNCIONANDO
 document.getElementById("btn6")?.addEventListener("click",poo6)
 
 import { questao7 as poo7} from "./POO/questao7.js";
@@ -28,14 +28,14 @@ document.getElementById("btn10")?.addEventListener("click",poo10)
 import { questao11 as poo11} from "./POO/questao11.js";
 document.getElementById("btn11")?.addEventListener("click",poo11)
 
-import { questao12 as poo12} from "./POO/questao12.js";
+import { questao12 as poo12} from "./POO/questao12.js";  // AQUI ESTÁ FUNCIONANDO
 document.getElementById("btn12")?.addEventListener("click",poo12)
 
 import { questao13 as poo13} from "./POO/questao13.js";
 document.getElementById("btn13")?.addEventListener("click",poo13)
 
 import { questao14 as poo14} from "./POO/questao14.js";
-document.getElementById("btn")?.addEventListener("click",poo14)
+document.getElementById("btn14")?.addEventListener("click",poo14)
 
 import { questao15 as poo15} from "./POO/questao15.js";
 document.getElementById("btn15")?.addEventListener("click",poo15)
