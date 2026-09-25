@@ -17,6 +17,7 @@ class contaCorrenta {
 
     public alterarnome(nomeNovo:string): void{
     this.nomeCorrentista = nomeNovo
+    
 }   
 
     public deposito(valor:number): Number{
