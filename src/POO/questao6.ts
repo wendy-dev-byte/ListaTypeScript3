@@ -5,36 +5,76 @@
 // ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.
 
 export function questao6():void{
-class contaCorrenta {
-    public numeroConta: number
-    public nomeCorrentista: string
-    public saldo: number = 0
 
-    constructor(numeroConta: number, nomeCorrentista: string){
-        this.numeroConta = numeroConta
-        this.nomeCorrentista = nomeCorrentista
+     class ContaRecorrente {
+        numeroConta: number
+        nome: string
+        saldo: number = 0
+
+
+        constructor(numeroConta: number, nome: string) {
+            this.nome = nome
+            this.numeroConta = numeroConta
+
+
+        }
+        exibirContaRecorrente(): void {
+            console.log(`
+                numeroConta ${this.numeroConta} 
+                nome ${this.nome}
+                Saldo${this.saldo}`)
+        }
+
+
+        alterarNome(novoNome: string): void {
+            this.nome = novoNome
+        }
+
+
+        deposito(valorDeposito: number): void {
+            if (valorDeposito >= 0) {
+                this.saldo = this.saldo + valorDeposito
+            } else {
+                console.log("deposito invalido")
+            }
+        }
+
+
+        saque(saque: number): void {
+            if (saque <= this.saldo) {
+                this.saldo = this.saldo - saque
+                console.log("saque feito com sucesso!!")
+            } else {
+                console.log("saldo insuficiente")
+            }
+        }
     }
 
-    public alterarnome(nomeNovo:string): void{
-    this.nomeCorrentista = nomeNovo
-    
-}   
+    let nome: string = String(prompt("qual seu nome?"))
+    let numeroConta: number = Number(prompt("qual o numero da sua conta"))
+    let novaContaRecorrente: ContaRecorrente = new ContaRecorrente(numeroConta, nome)
+    novaContaRecorrente.exibirContaRecorrente()
 
-    public deposito(valor:number): Number{
-        this.saldo = this.saldo + valor
 
-        return this.saldo
-    }
+    let op: number = Number(prompt("o que vc deseja fazer agora? 1-trocar de nome, 2-depositar, 3-sacar, 4- Mostrar Saldo 5-sair"))
+    while (op != 0) {
+        if (op == 1) {
+            let novoNome: string = String(prompt("para qual novo nome?"))
+            novaContaRecorrente.alterarNome(novoNome)
+        } else if (op == 2) {
+            let valorDeposito: number = Number(prompt("qual valor do deposito?"))
+            novaContaRecorrente.deposito(valorDeposito)
+        } else if (op == 3) {
+            let saque: number = Number(prompt("qual valor do saque?"))
+            novaContaRecorrente.saque(saque)
+        }else if( op == 4 ){
 
-    public saque(valor:number): Number{
-        let saldo1 = 0
-        if(valor > this.saldo){
-            console.log("O valor do saldo é maior do que o saldo disponível")
+         novaContaRecorrente.exibirContaRecorrente()   
+        } else if (op == 5) {
+            console.log("programa finalizado.")
         }
-        else{
-            saldo1 = this.saldo + valor
-        }
-        return saldo1
+         op = Number(prompt("o que vc deseja fazer agora? 1-trocar de nome, 2-depositar, 3-sacar, 4- Mostrar Saldo 5-sair"))
     }
 }
-}
+
+
