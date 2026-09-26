@@ -9,6 +9,8 @@
 // um array. No final, o sistema percorre a lista e dispara o método emitirCertificado() de cada
 // curso, exibindo quais certificados foram liberados e quais ficaram pendentes.
 
+export function questao36():void{
+    
 abstract class Certificados {
     private _titulo: string
     public get titulo(): string {
@@ -119,4 +121,5 @@ console.log("----- CERTIFICADOS -----")
 
 for (let curso of lista) {
     curso.exibir()
+}
 }
