@@ -18,13 +18,7 @@
 export function questao21():void{
 
 abstract class Projeto {
-    private _titulo: string = ""
-    public get titulo1(): string {
-        return this._titulo
-    }
-    public set titulo1(value: string) {
-        this._titulo = value
-    }
+    private _titulo:string = ""
     private _coordenador:string = ""
     private _nota:number
 
@@ -87,7 +81,7 @@ class ProjetoCultural extends Projeto{
     }
 }
 
-let op:number = -1
+let op = -1
 
 while(op!= 0 ){
 op = Number(prompt(`Escolha as opções desejadas: 
@@ -98,10 +92,9 @@ op = Number(prompt(`Escolha as opções desejadas:
     if (op == 1){
         let projetoVerde:ProjetoVerde = new ProjetoVerde(0)
         projetoVerde.calculodeMedia()
-
     }else if(op == 2){
-        let projetoCultural:ProjetoCultural = new ProjetoCultural(0)
-        projetoCultural.calculodeMedia()
+         let projetoCultural:ProjetoCultural = new ProjetoCultural(0)
+       projetoCultural.calculodeMedia()
     }
-}
+ }
 }
