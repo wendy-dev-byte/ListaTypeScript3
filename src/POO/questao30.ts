@@ -8,6 +8,9 @@
 // o seu tipo. No final, o sistema exibe o relatório de todas as passagens vendidas e calcula o
 // faturamento total do dia utilizando uma estrutura de redução ou soma acumulada.
 
+
+export function questao30():void{
+
 class Passagem {
   private _nome: string
     public get nome(): string {
@@ -93,3 +96,4 @@ while (op != 4) {
         }
 
     }
+}
