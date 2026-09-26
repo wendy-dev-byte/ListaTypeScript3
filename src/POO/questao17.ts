@@ -12,9 +12,6 @@
 
 export function questao17():void{
 
-
-
-
 abstract class Refeitorio{
    private  id:number
    private nome:string
@@ -42,9 +39,6 @@ class Alunos extends Refeitorio{
         Curso: ${this.curso1} `)
     }
 
-
-
-
 }class Servidores extends Refeitorio{
     departamento1:string
     constructor(id:number,nome:string, departamento1:string){
@@ -56,31 +50,14 @@ class Alunos extends Refeitorio{
          nome: ${this.getNome()}
          Departamento: ${this.departamento1} `)
 
-
-
-
     }
 }
-
-
-
-
-
-
-
-
 let listaServidor:Servidores[] = []
 let listaAluno:Alunos[] = []
-
-
-
 
 let id=0,nome="",curs="",depar=""
 let alunos:Alunos = new Alunos(id,nome,curs)
 let servidor = new Servidores (id,nome,depar)
-
-
-
 
 let usuario
 let op = ""
