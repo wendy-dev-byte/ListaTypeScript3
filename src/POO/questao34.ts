@@ -137,35 +137,3 @@ while(continuar != 4) {
 
 
 
-// abstract class Veiculo {
-//     private _placa: string
-
-//     public get placa(): string {
-//         return this._placa
-//     }
-//     public set placa(p: string) {
-//         this._placa = p
-//     }
-//     private _horaEN: number
-
-//     public get horaEN(): number {
-//         return this._horaEN
-//     }
-//     public set horaEN(h : number) {
-//         this._horaEN = h
-//     }
-
-//     constructor(placa: string, horaEN: number){
-//         this._placa = placa
-//         this._horaEN = horaEN
-//     }
-//    abstract calcularValor(horasPermanencia: number): number
-// }
-
-// class Carro extends Veiculo {
-    
-//     constructor(placa:string, horasEN: number){
-//         super(placa,horasEN)
-//     }
-
-// }
