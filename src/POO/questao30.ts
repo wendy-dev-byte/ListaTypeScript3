@@ -69,7 +69,7 @@ while (op != 4) {
             let valorBase = Number(prompt("Digite o valor base do Passagem: "))
             
             let infantil = new Passagem(nome, cpf, valorBase)
-            //Infantil.valorFinal()
+            
 
             lista.push(infantil)
 
