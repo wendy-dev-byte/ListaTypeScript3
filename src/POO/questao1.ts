@@ -2,6 +2,7 @@
 //  Atributos: Cor, circunferência, material
 //  Métodos: trocaCor e mostraCor
 
+export function questao1():void{
 class Bola {
         cor: string = "azul"
         circunferencia: number
@@ -32,7 +33,7 @@ class Bola {
     }
     let  novaBola: Bola = new  Bola("verde", 1.50, "aço")
          novaBola.exibirbola()                           
-
+}
 
 
 
