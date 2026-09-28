@@ -7,6 +7,7 @@
 // simula a passagem do caixa, aplicando as regras de desconto conforme o tipo do produto e exibindo o
 // valor final que o cliente pagará.
 
+export function questao23():void{
  class Produto {
     codigo: string
     nome: string
@@ -64,3 +65,4 @@ for (let produto of listaProduto) {
 }
        }
 
+    }
