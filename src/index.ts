@@ -79,8 +79,11 @@ document.getElementById("btn42")?.addEventListener("click",poo42)
 import { questao43 as poo43} from "./POO/questao43.js";
 document.getElementById("btn43")?.addEventListener("click",poo43)
 
-import { questao46 as poo46} from "./POO/questao46.js";
-document.getElementById("btn46")?.addEventListener("click",poo46)
+import { questao44 as poo44} from "./POO/questao44.js";
+document.getElementById("btn44")?.addEventListener("click",poo44)
+
+import { questao45 as poo45} from "./POO/questao45.js";
+document.getElementById("btn46")?.addEventListener("click",poo45)
 
 import { questao48 as poo48} from "./POO/questao48.js";
 document.getElementById("btn48")?.addEventListener("click",poo48)
