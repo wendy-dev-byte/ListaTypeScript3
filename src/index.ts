@@ -1,3 +1,6 @@
+import { questao1 as poo1 } from "./POO/questao1.js";
+document.getElementById("btn1")?.addEventListener("click",poo1)
+
 import { questao2 as poo2 } from "./POO/QUESTAO2.js";
 document.getElementById("btn2")?.addEventListener("click",poo2)
 
@@ -58,6 +61,12 @@ document.getElementById("btn21")?.addEventListener("click",poo21)
 import { questao22 as poo22} from "./POO/questao22.js";
 document.getElementById("btn22")?.addEventListener("click",poo22)
 
+import { questao23 as poo23 } from "./POO/questao23.js";
+document.getElementById("btn23")?.addEventListener("click",poo23)
+
+import { questao28 as poo28} from "./POO/questao28.js";
+document.getElementById("btn28")?.addEventListener("click",poo28)
+
 import { questao30 as poo30} from "./POO/questao30.js";
 document.getElementById("btn30")?.addEventListener("click",poo30)
 
@@ -83,7 +92,13 @@ import { questao44 as poo44} from "./POO/questao44.js";
 document.getElementById("btn44")?.addEventListener("click",poo44)
 
 import { questao45 as poo45} from "./POO/questao45.js";
-document.getElementById("btn46")?.addEventListener("click",poo45)
+document.getElementById("btn45")?.addEventListener("click",poo45)
+
+import { questao46 as poo46} from "./POO/questao46.js";
+document.getElementById("btn46")?.addEventListener("click",poo46)
+
+import { questao47 as poo47} from "./POO/questao47.js";
+document.getElementById("btn47")?.addEventListener("click",poo47)
 
 import { questao48 as poo48} from "./POO/questao48.js";
 document.getElementById("btn48")?.addEventListener("click",poo48)
